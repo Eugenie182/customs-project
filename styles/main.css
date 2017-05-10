@@ -1,0 +1,16 @@
+#map {
+
+    margin-top: 20px;
+    height: 700px;
+    width: 100%;
+}
+
+.mapSelector {
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #FAFAFA;
+}
+
+.buttonSelectors {
+    margin-bottom: 50px;
+}

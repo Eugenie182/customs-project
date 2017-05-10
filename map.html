@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Дипломный проект</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Законодательство <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a href="customs_code.html">ТК ТС</a></li>
+                <li><a href="law_acts.html">НПА</a></li>
+              </ul>
+            </li>
+            <li><a href="statistics.html">Статистика</a></li>
+            <li class='active'><a href="map.html">Карта</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="buttonSelectors col-xs-offset-4">
+          <a id='goodsSelector' class="btn btn-primary btn-lg" href="#" role="button">По товарам</a>
+          <a id='documentsSelector' class="btn btn-primary btn-lg" href="#" role="button">По документам</a>
+        </div>
+      </div>
+
+      <div id="documentsPane">
+        <form id='documentTransitSelection'>
+          <label class="radio-inline">
+            <input class='documentSelectionRadio' type="radio" name="documentRadio" postName="MDP">МДП</label>
+          </label>
+          <label class="radio-inline">
+            <input class='documentSelectionRadio' type="radio" name="documentRadio" postName="TD">ТД</label>
+          </label>
+        </form>
+      </div>
+
+      <div id="borderPane">
+        <label for="selectCountryFrom">Откуда: </label>
+        <select id="selectCountryFrom">
+          <option>Россия</option>
+          <option>Украина</option>
+        </select>
+
+        <label for="selectCountryTo">Через: </label>
+        <select id="selectCountryTo">
+          <option>Россия</option>
+          <option>Украина</option>
+        </select>
+      </div>
+
+      <div id="map"></div>
+
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <!-- <script src="bower_components/google-maps/lib/Google.min.js"></script> -->
+    <script src="javascript/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW7DW_P_3gv7H8nnmjD7DpRu9ZOTpHen8&callback=initMap"></script>
+</body>
+</html>

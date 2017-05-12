@@ -14,3 +14,7 @@
 .buttonSelectors {
     margin-bottom: 50px;
 }
+
+#mapTitle {
+    padding-left: 2px;
+}

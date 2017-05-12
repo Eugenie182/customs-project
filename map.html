@@ -51,28 +51,46 @@
       </div>
 
       <div id="documentsPane">
+        <h2 id="mapTitle">МАПП, доступные для перевозок по процедуре МДП в Российскую Федерацию</h2>
         <form id='documentTransitSelection'>
-          <label class="radio-inline">
-            <input class='documentSelectionRadio' type="radio" name="documentRadio" postName="MDP">МДП</label>
-          </label>
-          <label class="radio-inline">
-            <input class='documentSelectionRadio' type="radio" name="documentRadio" postName="TD">ТД</label>
-          </label>
+          <label for="borderNameSelector">Выберите границу: </label>
+          <select id="borderNameSelector">
+            <option value="RU_FIN">Российско-финляндский участок границы</option>
+            <option value="RU_UA">Российско-украинский участок границы</option>
+            <option value="RU_MO">Российско-монгольский участок границы</option>
+            <option value="RU_NO">Российско-норвежский участок границы</option>
+            <option value="RU_EE">Российско-эстонский участок границы</option>
+            <option value="RU_LA">Российско-латвийский участок границы</option>
+            <option value="RU_AB">Российско-абхазский участок границы</option>
+            <option value="RU_AZ">Российско-азербайджанский участок границы</option>
+            <option value="RU_GR">Российско-грузинский участок границы</option>
+            <option value="RU_PO">Российско-польский участок границы </option>
+            <option value="RU_LI">Российско-литовский участок границы</option>
+          </select>
         </form>
       </div>
 
       <div id="borderPane">
         <label for="selectCountryFrom">Откуда: </label>
         <select id="selectCountryFrom">
-          <option>Россия</option>
-          <option>Украина</option>
+          <option value="RU">Россия</option>
+          <option value="UA">Украина</option>
         </select>
 
         <label for="selectCountryTo">Через: </label>
         <select id="selectCountryTo">
-          <option>Россия</option>
-          <option>Украина</option>
+          <option value="RU">Россия</option>
+          <option value="UA">Украина</option>
         </select>
+
+
+        <label for="selectMeans">Транспорт: </label>
+        <select id="selectMeans">
+          <option value="AUTO">Автомобильный</option>
+          <option value="RAILWAY">Железнодорожный</option>
+        </select>
+
+        <a id='bordersBtnSelector' class="btn btn-primary btn-lg" href="#" role="button">Показать</a>
       </div>
 
       <div id="map"></div>

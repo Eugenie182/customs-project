@@ -106,7 +106,7 @@ RussiaThroughUkraine = {
             {name: "Нови Яриловичи", lat: 52.0747122, lng: 30.96993864},
             {name: "Славутич", lat: 51.39927259, lng: 30.65793872},
             {name: "Виступовичи", lat: 51.62457104, lng: 29.08599257},
-            {name: "Городище", lat: 29.08599257, lng: 26.69007182},
+            {name: "Городище", lat: 51.820635, lng: 26.69007182},
             {name: "Дольск", lat: 51.93500495, lng: 25.54735422},
             {name: "Пулемець", lat: 51.55716919, lng: 23.64029288}
         ],
@@ -159,26 +159,18 @@ UkraineThroughRussia = {
     }
 }
 
-// TDCoordinates = MDPCoordinates.slice()
-
-// 4. Âÿðòñèëÿ 62.1782139 30.6934647
-// 5. Ñóîïåðÿ 65.798333 30.1075
-// 6. Ëîòòà 68.6693586 30.0998134
-// 7. Ñàëëà 66.8326525 28.6701181
-// 8. Ëþòòÿ 64.5452494 29.9937487
-
 
 function initMap(){
-console.log("Initialising map");
+    console.log("Initialising map");
 
-var BelarusCenter = {lat: 53.76170183, lng: 28.28979492};
+    var BelarusCenter = {lat: 53.76170183, lng: 28.28979492};
 
-googleMap = new google.maps.Map(document.getElementById('map'), {
-  zoom: 4,
-  center: BelarusCenter
-});
+    googleMap = new google.maps.Map(document.getElementById('map'), {
+      zoom: 3,
+      center: BelarusCenter
+    });
 
-showMarkers(coordinates);
+    showMarkers(coordinates);
 }
 
 function showMarkers(coordinates){

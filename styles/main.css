@@ -18,3 +18,11 @@
 #mapTitle {
     padding-left: 2px;
 }
+
+.statsImage {
+    /*width: 500px;*/
+    padding: 20px 20px;
+    margin: 5px;
+    height: 300px;
+    border: 1px solid #F1F1F1;
+}

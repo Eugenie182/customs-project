@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Заглавная</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body id="background">
-    
+
+<div id="header">
+   <h1 style="color:black;">ТРАНЗИТ В ЕВРАЗИЙСКОМ ЭКОНОМИЧЕСКОМ СОЮЗЕ</h1>
+   <h5>Сайт о таможенной процедуре таможенного транзита</h5>
+</div>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Дипломный проект</a>
+       <a class="navbar-brand" href="index.html">Главная</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,25 +41,87 @@
         </li>
         <li><a href="statistics.html">Статистика</a></li>
         <li><a href="map.html">Карта</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
+         <div class = "row">
+            <div class="span6 pull-right" style="text-align:right">
+                <a href="site_structure.html">
+                    <img id="siteHierarchyImage" src="images/sitemap-512.png">
+                </a>
+            </div>
+         </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 <div class="container">
-  <div class="jumbotron">
-  <h1>Добро пожаловать!</h1>
-  <p>Данный сайт был разработан в рамках дипломной работы студентки Белорусского национального технического университета по специальности “Таможенное дело”.
-  Тема дипломной работы: “Направления совершенствования таможенной процедуры таможенного транзита в Евразийском экономическом союзе””
-  </p>
-  </div>
-  
+  <div class="row">
+    <div class="col-xs-8 content" >
+      <p class="article" align="justify"><b>    Транзит</b> грузов представляет собой важную сферу современной мировой экономики. Он является важной ценовой составляющей логистического процесса транспортировки груза от производителя к потребителю и имеет сложную многослойную структуру. Данный вид перевозок вносит существенный вклад в бюджет многих государств-транзитёров, которые сами не располагают существенными ресурсами и предпочитают фокусироваться на логистике и созданию инфраструктуры для облегчения процесса транзита. К числу таких стран относится и Республика Беларусь.</p>
+      <img class="content-image1" src="images/vehiculos.jpg" align="left" alt="">
+      В зависимости от способа транспортировки грузов, различают: <ul class="transit-types"><li>Сухопутный транзит, в том числе:</li>
+         <ul class="land-ul"><li>Автомобильный транзит (грузовики, фуры, машины);</li>
+         <li>Железнодорожный транзит (поезда).</li></ul>
+       <li>Трубопроводный транзит (газопроводы, нефтепроводы, водопроводы, ЛЭП);</li>
+       <li>Воздушный транзит (самолёты);</li>
+       <li>Морской транзит (танкеры, сухогрузы и т. д.).</li></ul>
+       <p align="justify">Для перевозки товаров транзитом по территории одной или нескольких государств их необходимо поместить под <i>таможенную процедуру таможенного транзита</i>. Данная процедура в Республике Беларусь регулируется как национальным, так и союзным таможенным законодательством в рамках Евразийского экономического союза.
+       </p>
+       <p align="justify">На этом сайте вы можете найти как теоретическую информацию по таможенной процедуре таможенного транзита, так и статистические данные транзитных грузоперевозок за последние годы. Важным дополнением к представленной информации является карта таможенных пропускных пунктов, разработанной на основании <i>Приказа ФТС 14.12.2015 №2568</i>, <i>Приказа Кабинета Министров Украины от 20.01.2016 г. №20</i> и <i>Указа Президента Российской Федерации от 01.01.2016 г. №1</i>. В соответствии с выбранной категорией, на карте могут отображаться:
+       <ul><li>ТПО для транзитных товаров, следующих попроцедуре МДП;</li>
+       <li>ТПО для украинских товаров, следующих транзитом через территорию России;</li>
+       <li>ТПО для российских товаров, следующих транзитом через территорию Украины;</li></ul></p>
+      
+    </div>
+  </div>    
 </div>
-    <footer class="footer"><p class="container">Работу подготовила Поддубицкая Е. А., гр.10806213</p></footer>
 
-  <button id='jumpToTop'>Наверх</button>
+
+<div id="page-wrapper" class="container-fluid links-container">
+  <form>
+  <div class="row-fluid">
+            <div class="span6 pull-right" id="links-block" style="text-align:right">
+ <h3 class="text-center" id="links-block-header">Интернет-ресурсы</h3>
+              <ul class="list-group" id="advanced-2">
+                <a href="http://www.customs.gov.by/ru" class="list-group-item">Государственный таможенный комитет</a>
+                <a href="http://gpk.gov.by/" class="list-group-item">Государственный пограничный комитет</a>
+                <a href="http://eec.eaeunion.org/" class="list-group-item">Евразийская экономическая комиссия</a>
+                <a href="http://www.e-cis.info/" class="list-group-item">Портал Содружества независимых государств</a>
+                <a href="http://https://mfa.gov.by/" class="list-group-item">Министерство иностранных дел</a>
+                <a href="http://www.pravo.by/" class="list-group-item">Национальный правовой интернет-портал</a>
+              </ul>    
+            </div>
+        </div>
+   </form>
+    </div>
+
+<div class="row">
+  <div class="rss-container">
+    <div class="col-md-4 span6 pull-right" id="new-feed" style="text-align:right">
+       <h3 class="text-center" id="links-block-header">Таможенные новости</h3>
+       <ul class="list-group" id="rss-feed">
+       </ul>
+    </div>
+  </div>
+</div>
+
+</div> <!-- /#wrapper -->
+
+</div>
+
+
+
+    <footer class="footer">Разработчик: студентка БНТУ, Поддубицкая Е.А., 2017</footer>
+    <button id='jumpToTop'>Наверх</button>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.rss.min.js"></script>
     <script src="javascript/scroll.js"></script>
+    <script>
+      $("#rss-feed").rss("https://news.tut.by/rss/s~ex6057.rss",
+      {
+        entryTemplate:'<li><a href="{url}">{title}</a>'
+      })
+    </script>
 </body>
 </html>
